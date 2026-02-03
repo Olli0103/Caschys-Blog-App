@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stadt Bremerhaven Mobile App Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="gradient-orb orb-one"></div>
+      <div class="gradient-orb orb-two"></div>
+      <div class="gradient-orb orb-three"></div>
+    </div>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Stadt Bremerhaven</div>
+        <div class="nav-links">
+          <a href="#goals">Goals</a>
+          <a href="#approach">Approach</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#release">Release</a>
+        </div>
+        <button class="primary-button">Get updates</button>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Mobile App Initiative</p>
+          <h1>Build a premium mobile experience for Stadt Bremerhaven.</h1>
+          <p class="lead">
+            A content-first roadmap for delivering a fast, accessible, and delightful
+            mobile app with offline reading, personalized discovery, and smart
+            notifications.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button">Launch MVP</button>
+            <button class="ghost-button">View roadmap</button>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <h3>4-8 weeks</h3>
+              <p>MVP build</p>
+            </div>
+            <div>
+              <h3>99.9%</h3>
+              <p>Target uptime</p>
+            </div>
+            <div>
+              <h3>2 platforms</h3>
+              <p>iOS + Android</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Success criteria</h2>
+          <ul>
+            <li>Crash-free sessions & fast load times</li>
+            <li>High install-to-activation rate</li>
+            <li>Measurable lift in returning users</li>
+          </ul>
+          <div class="progress">
+            <div>
+              <p>Readability</p>
+              <span>92%</span>
+            </div>
+            <div class="progress-bar"><span style="width: 92%"></span></div>
+            <div>
+              <p>Performance</p>
+              <span>88%</span>
+            </div>
+            <div class="progress-bar"><span style="width: 88%"></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section id="goals" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Goals & Success</p>
+          <h2>Deliver value from day one.</h2>
+          <p>
+            Prioritize speed, reliability, and long-term engagement with a measurable,
+            user-centered launch.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Primary goals</h3>
+            <p>
+              Build a fast, reliable mobile experience for blog content while growing
+              engagement through smart notifications and offline access.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Success criteria</h3>
+            <p>
+              Stabilize performance metrics, accelerate load times, and raise
+              install-to-activation rates across devices.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Guiding principles</h3>
+            <p>
+              Content-first navigation, inclusive accessibility, and clear opt-in
+              privacy controls.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="approach" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Recommended approach</p>
+          <h2>Start with a focused MVP.</h2>
+        </div>
+        <div class="split">
+          <div class="stack">
+            <div class="feature">
+              <div class="badge">01</div>
+              <div>
+                <h3>Content-first core</h3>
+                <p>
+                  Post list, detail view, categories/tags, search, sharing, bookmarks,
+                  and offline reading.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="badge">02</div>
+              <div>
+                <h3>Cross-platform stack</h3>
+                <p>
+                  Build with Flutter or React Native, reserving native modules for
+                  push notifications, analytics, and storage.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="badge">03</div>
+              <div>
+                <h3>Backend integration</h3>
+                <p>
+                  Leverage existing CMS endpoints or create a lightweight backend-for-
+                  frontend layer to normalize content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card">
+            <h3>Core feature set</h3>
+            <ul>
+              <li>Fast content discovery</li>
+              <li>Offline bookmarks & saved posts</li>
+              <li>Smart image optimization</li>
+              <li>Accessible typography & theming</li>
+              <li>Secure API integration</li>
+            </ul>
+            <button class="primary-button">Download scope</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Architecture & data</p>
+          <h2>Designed for resilience and speed.</h2>
+        </div>
+        <div class="architecture-grid">
+          <article class="card">
+            <h3>Data layer</h3>
+            <p>Client-side caching with SQLite or Realm and smart invalidation.</p>
+          </article>
+          <article class="card">
+            <h3>Offline support</h3>
+            <p>Save recently viewed posts, bookmarks, and curated collections.</p>
+          </article>
+          <article class="card">
+            <h3>Content rendering</h3>
+            <p>Sanitize HTML, map CMS media to responsive image components.</p>
+          </article>
+          <article class="card">
+            <h3>Search strategy</h3>
+            <p>Server-side search with optional on-device indexing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="best-practices" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Best practices</p>
+          <h2>Operational excellence baked in.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Performance</h3>
+            <p>Lazy load images, optimize media size, prefetch next posts.</p>
+          </article>
+          <article class="card">
+            <h3>Security & privacy</h3>
+            <p>HTTPS everywhere, validated inputs, GDPR-compliant opt-ins.</p>
+          </article>
+          <article class="card">
+            <h3>Accessibility</h3>
+            <p>System font scaling, high-contrast support, voiceover ready.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="release" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Release plan</p>
+          <h2>Launch in five focused phases.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>01</span>
+            <div>
+              <h3>Discovery</h3>
+              <p>Audit CMS endpoints, define MVP scope, wireframes, metrics.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>02</span>
+            <div>
+              <h3>Build MVP</h3>
+              <p>Core screens, content rendering, caching, analytics, push.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>03</span>
+            <div>
+              <h3>Beta & QA</h3>
+              <p>Internal testing, TestFlight/Play Console, fixes.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>04</span>
+            <div>
+              <h3>Launch</h3>
+              <p>Store assets, compliance checks, staged rollout.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>05</span>
+            <div>
+              <h3>Iteration</h3>
+              <p>Personalization, comments, offline enhancements.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tooling" class="section callout">
+        <div>
+          <p class="eyebrow">Tooling & operations</p>
+          <h2>Confidence through observability.</h2>
+          <p>
+            CI/CD, monitoring, and analytics are integrated from day one to keep the
+            app reliable, secure, and measurable.
+          </p>
+        </div>
+        <div class="pill-grid">
+          <span>GitHub Actions / Bitrise</span>
+          <span>Crashlytics / Sentry</span>
+          <span>Firebase Analytics / Matomo</span>
+          <span>APNs + FCM</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Stadt Bremerhaven Mobile</h3>
+        <p>Designed for clarity, speed, and community.</p>
+      </div>
+      <button class="ghost-button">Request proposal</button>
+    </footer>
+  </body>
+</html>
